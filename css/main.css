@@ -1,10 +1,29 @@
+@media (min-width: 576px) {
+  .card-columns {
+      column-count: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-columns {
+      column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+      column-count: 3;
+  }
+}
+
 body {
-background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 header {
   background: url(../img/img23.jpg);
   background-size: cover;
   background-position: center;
+  margin-top: 1%;
 }
 
  
