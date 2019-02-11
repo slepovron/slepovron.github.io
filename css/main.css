@@ -16,9 +16,16 @@
   }
 }
 
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
 body {
   background-color: #f8f9fa;
 }
+
 header {
   background: url(../img/img23.jpg);
   background-size: cover;
