@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 
+@font-face {
+  font-family: 'Lobster', cursive;
+}
 
 @media (min-width: 576px) {
   .card-columns {
@@ -35,10 +39,14 @@ body {
 }
 
 header {
-  background: url(../img/img23.jpg);
+  /*background: url(../img/img23.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center;*/
   margin-top: 1%;
+}
+
+.lobster {
+  font-family: 'Lobster', cursive;
 }
 
  
