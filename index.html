@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <title>Welcome page</title>
   </head>
@@ -15,18 +16,17 @@
     <div class="container"> <!-- jumbotron container -->
       <header class="jumbotron">
         <a class="logo" href="index.html">
-          <img src="https://avatars2.githubusercontent.com/u/27227805?s=460&v=4" width="150" height="150" alt="logo" class="rounded-circle">
+          <img src="https://avatars2.githubusercontent.com/u/27227805?s=460&v=4" width="150" height="150" alt="logo" class="rounded-circle img-thumbnail">
         </a>
-        <div class="text-right">
+        <div class="text-right text-white">
           <h1 class="lobster">Hi! I'm Slepovron,</h1>
           <h3 class="lobster">a front-end developer.</h3>
           <p class="lead font-weight-bold">I develop static websites, web applications and interactive visualizations.</p>   
-        </div>
-        
+        </div> 
       </header>
     </div> <!-- jumbotron -->
 
-    <div class="container"> <!-- navigation bar container -->
+    <div id="navtop" class="container"> <!-- navigation bar container -->
         <nav class="navbar navbar-expand-md navbar-light bg-light">
           <a class="lobster navbar-brand" href="#">Slepovron</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,13 +38,13 @@
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="page/page2.html">Page 2</a>
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Resume</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="page/page2.html">Links</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
                 </li>
               </ul>
             </div>
@@ -54,40 +54,42 @@
     <div class="container"> <!-- project cards container -->
         <div class="card-columns">
 
-            <div class="card bg-secondary text-white text-left p-4">
-              <blockquote class="blockquote mb-0">
+            <div id="quote" class="card bg-secondary lobster p-3"> <!-- some quote -->
+              <blockquote class="blockquote mb-0 text-left">
                 <p>Даже путь в тысячу ли начинается с первого шага.</p>
-                <footer class="blockquote-footer text-white">
+                <footer class="blockquote-footer text-light">
                   <small>
                       Лао-цзы <cite title="Source Title">(Дао дэ цзин)</cite>
                   </small>
                 </footer>
               </blockquote>
-            </div> <!-- 0 card -->
+              <hr>
+              <blockquote class="blockquote mb-0 text-right">
+                  <p>Главное не топтаться на месте...</p>
+                  <footer class="blockquote-footer text-light">
+                    <small>
+                        Я <cite title="Source Title">(только что)</cite>
+                    </small>
+                  </footer>
+                </blockquote>
+            </div> <!-- qoute card -->
 
-            <div class="card bg-secondary text-white text-right p-3">
-              <blockquote class="blockquote mb-0">
-                <p>Главное на нем не остановиться...</p>
-                <footer class="blockquote-footer text-white">
-                  <small>
-                      Я <cite title="Source Title">(только что)</cite>
-                  </small>
-                </footer>
-              </blockquote>
-            </div> <!-- 0 card -->
+            <div id="tulacafe" class="card bg-secondary p-3"> <!-- tulacafe project -->
+              <h4 class="card-title lobster">Кондитерская Корица</h4>
+              <p class="card-text">Перенос имевшейся статической страницы кафе на систему управления WordPress для возможности управления содержимым сайта заказчиком.</p>
+              <a href="https://tulacafe.ru" class="btn btn-outline-dark">Перейти на сайт</a>
+            </div> <!-- tulacafe -->
 
-            <div class="card" style="width: 20rem;">
-              <img class="card-img-top w-100" src="https://tulacafe.ru/assets/splash-bg.jpg"
-              alt="Card image cap" >
-              <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up
-              the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card"> <!-- vingil project -->
+              <img class="card-img-top w-100" src="img/vingil.jpg" alt="Card image cap" >
+              <div class="card-body bg-dark text-light">
+              <h4 class="card-title lobster">Vingil</h4>
+              <p class="card-text">Верстка сайта-магазина дизайнерской одежды на WordPress на основе предложенного заказчиком шаблона с подключением необходимых плагинов и языковых библиотек.</p>
+              <a href="http://vingil.ru" class="btn btn-outline-light">Перейти на сайт</a>
               </div>
-            </div>
+            </div> <!-- vingil -->
 
-            <div class="card bg-light text-dark">
+            <div id="teacher" class="card bg-light text-dark">
               <img src="https://tulacafe.ru/assets/splash-bg.jpg" class="card-img" alt="...">
               <div class="card-img-overlay">
                 <h5 class="card-title">Card title</h5>
@@ -111,8 +113,11 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#">Features</a>
-              <a class="nav-item nav-link" href="#">Pricing</a>
+              <a class="nav-item nav-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a class="nav-item nav-link" href="#"><i class="fab fa-github"></i></a>
+              <a class="nav-item nav-link" href="#"><i class="fab fa-discord"></i></a>
+              <a class="nav-item nav-link" href="#"><i class="fab fa-telegram"></i></a>
+              <a class="nav-item nav-link" href="#"><i class="fas fa-mail-bulk"></i></a>
               <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </div>
           </div>

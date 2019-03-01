@@ -39,14 +39,35 @@ body {
 }
 
 header {
-  background: url(../img/img30.jpg);
+  background: url(../img/ocean.jpg);
   background-size: cover;
   background-position: center;
   margin-top: 1%;
 }
 
+.jumbotron {
+  margin-bottom: 1%;
+  padding: 2rem 2rem;
+}
+
+#navtop {
+  margin-bottom: 1%;
+}
+
 .lobster {
   font-family: 'Lobster', cursive;
+}
+
+#quote {
+  background: url(../img/img24.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#tulacafe {
+  background: url(https://tulacafe.ru/assets/splash-bg.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
  
