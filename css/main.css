@@ -40,7 +40,7 @@ body {
 }
 
 header {
-  background: url(../img/ocean.jpg);
+  background: url(../img/city-large.jpg);
   background-size: cover;
   background-position: center;
   margin-top: 1%;
@@ -59,14 +59,32 @@ header {
   font-family: 'Lobster', cursive;
 }
 
-#quote {
-  background: url(../img/img24.jpg);
+.quote1 {
+  background: url(../img/keyboard-small.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.quote2 {
+  background: url(../img/man-small.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.quote3 {
+  background: url(../img/station-small.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #tulacafe {
   background: url(https://tulacafe.ru/assets/splash-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#mylinks {
+  background: url(../img/man-small.jpg);
   background-size: cover;
   background-position: center;
 }

@@ -21,7 +21,7 @@
         <div class="text-right text-white">
           <h1 class="lobster">Hi! I'm Slepowron,</h1>
           <h3 class="lobster">a front-end developer.</h3>
-          <p class="lead font-weight-bold">I develop static websites, web applications and interactive visualizations.</p>   
+          <p class="lead font-weight-bold">Web-developer, IT-specialist, freelancer and traveler.</p>   
         </div> 
       </header>
     </div> <!-- jumbotron -->
@@ -38,7 +38,7 @@
                   <a class="nav-link" href="index.html">Projects<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="pages/resume.html" tabindex="-1" aria-disabled="true">Resume</a>
+                  <a class="nav-link " href="pages/resume.html">Resume</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="pages/about_me.html">About Me</a>
@@ -47,43 +47,50 @@
                   <a class="nav-link" href="pages/links.html">Links</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="pages/contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+                  <a class="nav-link disabled" href="pages/contact.html">Contact</a>
                 </li>
               </ul>
             </div>
         </nav>
       </div> <!-- navigation bar -->
 
-    <div class="container"> <!-- project cards container -->
-        <div class="card-columns">
+    <div class="container"> <!-- projects card container -->
+      <div class="card-columns"> <!-- wrapper for cards -->
 
-            <div id="quote" class="card bg-secondary lobster p-3"> <!-- some quote -->
-              <blockquote class="blockquote mb-0 text-left">
-                <p>"– В невежестве есть что-то привлекательное, но оно опасно, правда? – Правда. Но о знании можно сказать то же самое, поэтому главное – правильная дозировка."</p>
-                <footer class="blockquote-footer text-light">
-                  <small>
-                      сэр Макс <cite title="Source Title"></cite>
-                  </small>
-                </footer>
-              </blockquote>
-            </div> <!-- qoute card -->
+          <div class="quote1 card bg-dark text-light lobster p-3"> <!-- qoute card -->
+            <blockquote class="blockquote mb-0 text-left">
+              <p>"– В невежестве есть что-то привлекательное, но оно опасно, правда? – Правда. Но о знании можно сказать то же самое, поэтому главное – правильная дозировка."</p>
+              <footer class="blockquote-footer">
+                <small>
+                    Макс Фрай <cite title="Source Title"></cite>
+                </small>
+              </footer>
+            </blockquote>
+          </div> <!-- qoute card -->
 
-            <div id="tulacafe" class="card bg-secondary p-3"> <!-- tulacafe project -->
-              <h4 class="card-title lobster">Кондитерская Корица</h4>
-              <p class="card-text">Перенос имевшейся статической страницы кафе на систему WordPress для возможности управления содержимым сайта без обращения к разработчикам. В дальнейшем возможно добавление функционала на сайт по желанию заказчика.</p>
-              <a href="https://tulacafe.ru" class="btn btn-outline-dark">Перейти на сайт</a>
-            </div> <!-- tulacafe -->
+          <div id="tulacafe" class="card bg-secondary p-3"> <!-- tulacafe project -->
+            <h4 class="card-title lobster">Кондитерская Корица</h4>
+            <p class="card-text">Перенос имевшейся статической страницы кафе на систему WordPress для возможности управления содержимым сайта без обращения к разработчикам. В дальнейшем возможно добавление функционала на сайт по желанию заказчика.</p>
+            <a href="https://tulacafe.ru" class="btn btn-outline-dark">Перейти на сайт</a>
+          </div> <!-- tulacafe -->
 
-            <div class="card"> <!-- vingil project -->
-              <img class="card-img-top w-100" src="img/vingil.jpg" alt="Card image cap" >
-              <div class="card-body bg-dark text-light">
-              <h4 class="card-title lobster">Vingil</h4>
-              <p class="card-text">Разработка и верстка сайта-магазина дизайнерской одежды на WordPress на основе предложенного заказчиком шаблона с подключением коммерческих плагинов и языковых библиотек.<br><em>В работе</em></p>
-              <a href="http://vingil.ru" class="btn btn-outline-light">Перейти на сайт</a>
-              </div>
-            </div> <!-- vingil -->
+          <div id="vingil" class="card"> <!-- vingil project -->
+            <img class="card-img-top w-100" src="img/vingil.jpg" alt="Card image cap" >
+            <div class="card-body bg-dark text-light">
+            <h4 class="card-title lobster">Vingil</h4>
+            <p class="card-text">Разработка и верстка сайта-магазина дизайнерской одежды на WordPress на основе предложенного заказчиком шаблона с подключением коммерческих плагинов и языковых библиотек.</p>
+            <a href="#" class="btn btn-outline-light">В работе</a>
+            </div>
+          </div> <!-- vingil -->
 
-    </div> <!-- card-columns -->
+          <div id="mylinks" class="card bg-dark text-light p-3"> <!-- links page -->
+              <h4 class="card-title lobster">Полезные ссылки</h4>
+              <p class="card-text">Страница с инструментами которые я использую в работе. В основном это открытые проекты либо проекты с возможностью ознакомительного периода использования, а так-же различные шпаргалки и библиотеки. Список постоянно пополняется и, надеюсь, будет полезным не только мне.</p>
+              <a href="pages/links.html" class="btn btn-outline-light">Перейти на страницу</a>
+          </div> <!-- links -->
+
+      </div> <!-- wrapper for cards -->
+    </div> <!-- projects card container -->
 
     <div class="container"> <!--  -->
 
@@ -91,19 +98,17 @@
 
     <div class="container"> <!-- footer container -->
       <footer class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand lobster" href="#">Slepowron</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
               <a class="nav-item nav-link" href="https://www.linkedin.com/in/wladimir-sawicki-16761499/"><i class="fab fa-linkedin-in"></i></a>
               <a class="nav-item nav-link" href="https://github.com/wladimir-sawicki"><i class="fab fa-github"></i></a>
               <a class="nav-item nav-link" href="https://discordapp.com/users/wladimir_korwin#0325"><i class="fab fa-discord"></i></a>
               <a class="nav-item nav-link" href="https://t.me/wladimir_korwin"><i class="fab fa-telegram"></i></a>
-              <a class="nav-item nav-link" href="cn.vsavitskiy@gmail.com"><i class="fas fa-mail-bulk"></i></a>
-              <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-item nav-link" href="#"><i class="fab fa-skype"></i></a>
             </div>
           </div>
         </footer>
