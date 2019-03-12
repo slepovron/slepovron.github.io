@@ -51,6 +51,12 @@ header {
   padding: 2rem 2rem;
 }
 
+@media (max-width: 767.98px) {
+  .jumbotron-logo {
+    display: none;
+  }
+}
+
 #navtop {
   margin-bottom: 1%;
 }
