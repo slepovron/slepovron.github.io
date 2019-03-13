@@ -12,106 +12,201 @@
     <link rel="stylesheet" href="../css/main.css">
     <title>Resume</title>
   </head>
+
   <body>
     
     <div class="container"> <!-- navigation bar container -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a class="logo" href="../index.html">
-              <img src="https://avatars2.githubusercontent.com/u/27227805?s=460&v=4" width="50" height="50" alt="logo" class="rounded-circle">
-              <span class="navbar-text lobster">Slepowron</span>
-            </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="resume.html">Resume<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="about_me.html">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="links.html">Links</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="contact.html" >Contact</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
-      </div> <!-- navigation bar -->
-
-    
-      <main class="container"> <!-- main content -->
-
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="skills lobster card-body">
-                <p>HTML5<br>
-                CSS3<br>
-                Flexbox<br>
-                Grid<br>
-                Twitter Bootstrap 4<br>
-                WordPress<br>
-                Git<br>
-                XAMPP<br>
-                Linux<br>
-                BEM</p>
-              </div>
-            </div>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <a class="logo navbar-brand" href="../index.html">
+            <img src="https://avatars2.githubusercontent.com/u/27227805?s=460&v=4" width="50" height="50" alt="logo" class="rounded-circle">
+            <span class="navbar-text lobster">Slepowron</span>
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#projects">Проекты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="resume.html">Резюме<span class="sr-only">(current)</a>
+              </li>
+              <!--<li class="nav-item">
+                  <a class="nav-link disabled" href="pages/about_me.html">About Me</a>
+              </li>-->
+              <li class="nav-item">
+                <a class="nav-link" href="links.html">Ссылки</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="mailto:vladimir.slepovron@gmail.com" class="nav-link">Контакты</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-sm-8">
-            <div class="card">
-              <div class="experience card-body">
-                <p>Начинающий фронтенд разработчик, заинтересован в использовании имеющихся знаний для получения опыта и наполнения портфолио. Работаю на Linux (Linux Mint, Peppermint OS, Parrot Security OS), использую VSCode в качестве редактора и Avocode для работы с макетами. На данный момент изучаю основы ECMAscript, NodeJS, Sass, RegEx.<br>
-                В качестве базовых знаний опираюсь на длительный опыт системного администрировния. Работал как в крупных компаниях, так и в частном секторе (включая фриланс). 
-                В web-разработке привлекает наглядность результата, широкие возможности для развития и распространенность удаленной работы.</p>
-              </div>
-            </div>
+      </nav>
+    </div> <!-- navigation bar -->
+
+    <main class="container"> <!-- main content -->
+
+      <div class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+        <div class="w-100">
+          <h2 class="mb-0">Wladimir Sawicki</h2>
+          <div>
+            
           </div>
-        </div>
-
-
-        <div class="webdev">
+          <p class="lead mb-5">Я начинающий фронтенд разработчик и заинтересован в использовании имеющихся знаний для получения опыта и наполнения портфолио. Работаю на Linux (Linux Mint, Peppermint OS, Parrot Security OS), использую VSCode в качестве редактора кода и Avocode для работы с PSD макетами. На данный момент изучаю основы ECMAscript, NodeJS, Sass, RegEx.<br>
+          В качестве базовых знаний опираюсь на длительный опыт системного администрировния. Работал как в крупных государственных и международных компаниях, так и в частном секторе (включая фриланс).<br>
+          В web-разработке меня привлекает наглядность результата, широкие возможности для развития и распространенность удаленной работы.</p>
           
         </div>
-        <div class="sysadmin">
-          <div class="skills">
+      </div>
 
-            </div>
-            <div class="experience">
+      <div class="resume-section p-3 p-lg-5 d-flex align-items-center" id="#">
+        <div class="w-100">
+          <h2 class="mb-5">Skills</h2>
   
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline dev-icons">
+            <li class="list-inline-item">
+              <i class="fab fa-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-css3-alt"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-js-square"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-angular"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-react"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-node-js"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-sass"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-less"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-wordpress"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-gulp"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-grunt"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-npm"></i>
+            </li>
+          </ul>
+  
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Mobile-First, Responsive Design</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Browser Testing &amp; Debugging</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Functional Teams</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Agile Development &amp; Scrum</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+        <div class="resume-content">
+          <h3 class="mb-0">Web Design Intern</h3>
+          <div class="subheading mb-3">Shout! Media Productions</div>
+          <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+        </div>
+        <div class="resume-date text-md-right">
+          <span class="text-primary">September 2008 - June 2010</span>
+        </div>
+      </div>
+
+      <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+        <div class="resume-content">
+          <h3 class="mb-0">Web Design Intern</h3>
+          <div class="subheading mb-3">Shout! Media Productions</div>
+          <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+        </div>
+        <div class="resume-date text-md-right">
+          <span class="text-primary">September 2008 - June 2010</span>
+        </div>
+      </div>
+
+      <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+        <div class="resume-content">
+          <h3 class="mb-0">Web Design Intern</h3>
+          <div class="subheading mb-3">Shout! Media Productions</div>
+          <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+        </div>
+        <div class="resume-date text-md-right">
+          <span class="text-primary">September 2008 - June 2010</span>
+        </div>
+      </div>
+
+      <div class="resume-section p-3 p-lg-5 d-flex align-items-center" id="#">
+        <div class="w-100">
+          <h2 class="mb-5">Education</h2>
+  
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-0">University of Colorado Boulder</h3>
+              <div class="subheading mb-3">Bachelor of Science</div>
+              <div>Computer Science - Web Development Track</div>
+              <p>GPA: 3.23</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2006 - May 2010</span>
             </div>
           </div>
-        </div>
-      </main> <!-- main -->
-
-
-      <div class="container"> <!-- footer container -->
-        <footer class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="https://www.linkedin.com/in/wladimir-sawicki-16761499/"><i class="fab fa-linkedin-in"></i></a>
-                <a class="nav-item nav-link" href="https://github.com/wladimir-sawicki"><i class="fab fa-github"></i></a>
-                <a class="nav-item nav-link" href="https://discordapp.com/users/wladimir_korwin#0325"><i class="fab fa-discord"></i></a>
-                <a class="nav-item nav-link" href="https://t.me/wladimir_korwin"><i class="fab fa-telegram"></i></a>
-                <a class="nav-item nav-link" href="cn.vsavitskiy@gmail.com"><i class="fas fa-mail-bulk"></i></a>
-                <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </div>
-            </div>
-          </footer>
-      </div> <!-- footer -->
   
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+            <div class="resume-content">
+              <h3 class="mb-0">James Buchanan High School</h3>
+              <div class="subheading mb-3">Technology Magnet Program</div>
+              <p>GPA: 3.56</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2002 - May 2006</span>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+
+    
+
+      
+
+
+      
+    </main> <!-- main -->
+
+
+    <div class="container"> <!-- footer container -->
+      <footer class="navbar navbar-expand navbar-light bg-light">
+        <div class="social navbar-nav">
+          <a class="nav-item nav-link" href="https://www.linkedin.com/in/wladimir-sawicki-16761499/"><i class="fab fa-linkedin-in"></i></a>
+          <a class="nav-item nav-link" href="https://github.com/wladimir-sawicki"><i class="fab fa-github"></i></a>
+          <a class="nav-item nav-link" href="https://discordapp.com/users/wladimir_korwin#0325"><i class="fab fa-discord"></i></a>
+          <a class="nav-item nav-link" href="https://t.me/wladimir_korwin"><i class="fab fa-telegram"></i></a>
+          <a class="nav-item nav-link" href="https://join.skype.com/invite/mgR1rLxv2B0L"><i class="fab fa-skype"></i></a>
+        </div>
+      </footer>
+    </div> <!-- footer -->
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
