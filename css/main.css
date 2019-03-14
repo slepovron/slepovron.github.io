@@ -97,3 +97,32 @@ header {
 .black {
   color: #000;
 }
+
+.resume-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  .resume-section {
+    min-height: 50vh;
+  }
+  .resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .resume-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.social {
+  font-size: 2rem;
+}

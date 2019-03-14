@@ -16,10 +16,9 @@
   <body>
     
     <div class="container"> <!-- navigation bar container -->
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <nav class="navbar navbar-expand-md navbar-light bg-light font-weight-bold">
           <a class="logo navbar-brand" href="../index.html">
             <img src="https://avatars2.githubusercontent.com/u/27227805?s=460&v=4" width="50" height="50" alt="logo" class="rounded-circle">
-            <span class="navbar-text lobster">Slepowron</span>
           </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -46,27 +45,45 @@
       </nav>
     </div> <!-- navigation bar -->
 
-    <main class="container"> <!-- main content -->
+    <main class="container p-0"> <!-- resume container -->
 
-      <div class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
         <div class="w-100">
-          <h2 class="mb-0">Wladimir Sawicki</h2>
-          <div>
-            
+          <h2 class="mb-5 lobster">Обо мне</h2>
+          <h1 class="mb-0">
+            Wladimir Sawicki
+          </h1>
+          <div class="mb-5">
+            <a href="mailto:vladimir.slepovron@gmail.com">vladimir.slepovron@gmail.com</a>
           </div>
-          <p class="lead mb-5">Я начинающий фронтенд разработчик и заинтересован в использовании имеющихся знаний для получения опыта и наполнения портфолио. Работаю на Linux (Linux Mint, Peppermint OS, Parrot Security OS), использую VSCode в качестве редактора кода и Avocode для работы с PSD макетами. На данный момент изучаю основы ECMAscript, NodeJS, Sass, RegEx.<br>
-          В качестве базовых знаний опираюсь на длительный опыт системного администрировния. Работал как в крупных государственных и международных компаниях, так и в частном секторе (включая фриланс).<br>
-          В web-разработке меня привлекает наглядность результата, широкие возможности для развития и распространенность удаленной работы.</p>
-          
+          <p class="lead mb-5">Начинающий фронтенд разработчик, заинтересован в использовании имеющихся знаний для получения опыта и наполнения портфолио. Работаю на Linux (Linux Mint, Peppermint OS, Parrot Security OS), использую VSCode в качестве редактора кода и Avocode для работы с PSD макетами. На данный момент изучаю основы ECMAscript, NodeJS, Sass, RegEx.<br>
+            В качестве базовых знаний опираюсь на длительный опыт системного администрировния. Работал как в крупных государственных и международных компаниях, так и в частном секторе (включая фриланс).<br>
+            В web-разработке меня привлекает наглядность результата, широкие возможности для развития и распространенность удаленной работы.</p>
         </div>
-      </div>
+      </section> <!-- about -->
 
-      <div class="resume-section p-3 p-lg-5 d-flex align-items-center" id="#">
-        <div class="w-100">
-          <h2 class="mb-5">Skills</h2>
+      <hr class="m-0">
   
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline dev-icons">
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+        <div class="w-100">
+          <h2 class="mb-5 lobster">Навыки</h2>
+          <div class="mb-3 font-weight-bold">Подход к работе:</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Адаптивная верстка</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Mobile-first дизайн</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Кроссбраузерность</li>
+          </ul>
+          <br>
+  
+          <div class="mb-3 font-weight-bold">Используемые языки и инструменты:</div>
+
+          <ul class="list-inline social">
             <li class="list-inline-item">
               <i class="fab fa-html5"></i>
             </li>
@@ -74,13 +91,22 @@
               <i class="fab fa-css3-alt"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-js-square"></i>
+              <i class="fab fa-wordpress"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-angular"></i>
+              <i class="fab fa-linux"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-react"></i>
+              <i class="fab fa-git-square"></i>
+            </li>
+          </ul>
+          <br>
+
+          <div class="mb-3 font-weight-bold">Изучаемые языки и инструменты:</div>
+
+          <ul class="list-inline social">
+            <li class="list-inline-item">
+              <i class="fab fa-npm"></i>
             </li>
             <li class="list-inline-item">
               <i class="fab fa-node-js"></i>
@@ -88,112 +114,193 @@
             <li class="list-inline-item">
               <i class="fab fa-sass"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="fab fa-less"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-wordpress"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-gulp"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-grunt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-npm"></i>
-            </li>
           </ul>
+       
+        </div>
+      </section> <!-- skills -->
   
-          <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-        <div class="resume-content">
-          <h3 class="mb-0">Web Design Intern</h3>
-          <div class="subheading mb-3">Shout! Media Productions</div>
-          <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">September 2008 - June 2010</span>
-        </div>
-      </div>
-
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-        <div class="resume-content">
-          <h3 class="mb-0">Web Design Intern</h3>
-          <div class="subheading mb-3">Shout! Media Productions</div>
-          <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">September 2008 - June 2010</span>
-        </div>
-      </div>
-
-      <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-        <div class="resume-content">
-          <h3 class="mb-0">Web Design Intern</h3>
-          <div class="subheading mb-3">Shout! Media Productions</div>
-          <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">September 2008 - June 2010</span>
-        </div>
-      </div>
-
-      <div class="resume-section p-3 p-lg-5 d-flex align-items-center" id="#">
+      <hr class="m-0">
+  
+      <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
         <div class="w-100">
-          <h2 class="mb-5">Education</h2>
+          <h2 class="mb-5 lobster">Опыт работы</h2>
   
           <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="resume-content">
-              <h3 class="mb-0">University of Colorado Boulder</h3>
-              <div class="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Science - Web Development Track</div>
-              <p>GPA: 3.23</p>
+              <h3 class="mb-1">Старший ИТ-аналитик, регион EMEA</h3>
+              <div class="mb-3 font-weight-bold">AVON</div>
+              <p>
+                Головное подразделение компании в РФ. Взаимодействие с международной структурой ИТ подразделений. Ведение проектов инфраструктурного подразделения ИТ. Мониторинг и решение проблем ИТ безопасности и доступа к информационным ресурсам. Разработка, защита и внедрение регулирующей документации на уровне региона. Подготовка к переходу на Windows 10 с учетом поддержки используемого в компании ПО.
+              </p>
+              <p>  
+                Лес доменов, на базе Microsoft Server 2008r2 (ADDS, DHCP, DNS, GPMC, WSUS, KMS, FS, TS, FTPS)<br>
+                Виртуализации серверов на основе VMware Vsphere<br>
+                Резервное копирование Symantec Backup Exec, Veeam<br>
+                Система мониторинга Nagios, IBM Tivoli<br>
+                Решение сетевой безопасности Websense<br>
+                Антивирусное программное обеспечение TrendMicro<br>
+                Видео и аудио конференции (Polycom Telepresence, MS Lync / Skype for business, Adobe Connect)<br>
+                мини-АТС Avaya Aura<br>
+                CRM сервисы Hardware Inspector, IBM Remedy, IBM Clariy, IBM Notes / Domino, OTRS<br>
+                Офисное оборудование Xerox, HP, Konica Minolta, Kyocera<br>       
+              </p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">August 2006 - May 2010</span>
+              <span class="text-primary">Декабрь 2014 — Декабрь 2015</span>
+            </div>
+          </div>
+  
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-1">Руководитель группы системного администрирования</h3>
+              <div class="mb-3 font-weight-bold">Оборонэнерго, ОАО</div>
+              <p>
+                Работа в реорганизуемой структуре государственного предприятия ("28 электрическая сеть", "Оборонэнерго аппарат управления", "Оборонэнерго центральный филиал") с ростом от системного администратора до руководителя группы. Опыт поддержки пользователей в 11 часовых поясах. В конечном виде поддержка ИТ структуры на территории МО и взаимодействие с филиалами в регионах РФ.
+              </p>
+              <p>
+                Проектирование и монтаж локальных сетей в новых подразделениях, развитие структуры ИТ отдела (включая собеседование и курирование новых сотрудников), внедрение видеоконференций для руководителей подразделений РФ, обновление сайта организации, переход на единый почтовый сервер, внедрение СКУД для с разграничением зон доступа, мониторинг действий сотрудников.
+              </p>
+              <p>
+                Ведущий системный администратор (7 сотрудников, 5 подразделений, 18 серверов, около 800 пользователей)<br>
+                Лес доменов на базе Microsoft Server 2008R2-2012R1 (ADDS, RODC, IIS, FTP, WSUS, Hiper-V, DHCP, DNS,GPMC, FS, TS, организация и репликация структуры OU)<br>
+                Сетевое оборудование HP,3com, Netgear, ZyXEL, D-Link, TP-link (VLAN, WDS)<br>
+                Шлюз Kerio Control 8 (NAT, PAT, VPN, Kerio-VPN, L2TP, PPPoE)<br>
+                Внутренние АТС Panasonic KX-TDA100, KX-TDE100, KX-TDE200, IP-PBX Asterisk (Elastix), Free-PBX<br>
+                Видео- и аудио- конференции (Panasonic Communication Assistance,MS Lync 2010, Skype, Google Hangouts)<br>
+                СКУД Access control system Legos (внедрение, настройка, программирование, зоны доступа)<br>
+                CRM Hardware Inspector, OTRS, 1С СЭД<br>
+                Система резервного копирования Acronis Backup, Acronis True Image<br>
+                Внедрение 1С Предприятие 8.1 (УПП и Документооборот) обучение сотрудников<br>
+                Система мониторинга Staff Cop Standart<br>
+                Оргтехника Konica Minolta, HP, Kyocera<br>
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Январь 2011 — Июль 2013</span>
+            </div>
+          </div>
+  
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-1">Системный администратор</h3>
+              <div class="mb-3 font-weight-bold">Tupperware</div>
+              <p>
+                Работа в центральном Российском офисе международной компании. Поддержка локальных пользователей и менеджеров работающих в регионах. Полный спектр работ по администрированию локальной сети и разворачиванию временных сетей на мероприятиях компании. Работа с провайдерами, операторами состовой связи, поставщиками оборудования и подрядными организациями. 
+              </p>
+              <p>
+                Успешно обновлена локальная сеть офиса, проведена инвентаризация используемого оборудования и ПО, внедрена поддержка внешних сотрудников через систему TeamViewer, ключевые сотрудники подключены к сервисам Blackberry, установлена система видеонаблюдения и система контроля сотрудников.
+              </p>
+              <p>
+                Администрирование локальной сети компании (Windows Server 2003R2, AD, File Server, DNS, DHCP, GPO etc.)<br>
+                Поддержка конечных пользователей (Windows XP Pro, XP Home, Win7, Windows Mobile 6/6.1/6.5)<br>
+                Резервное копирование и восстановление данных (Veritas backup)<br>
+                Поддержка внутренней телефонии (Avaya)<br>
+                Работа с поставщиком корпоративной мобильной связи (МТС)<br>
+              </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Май 2008 — Сентябрь 2009</span>
             </div>
           </div>
   
           <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
             <div class="resume-content">
-              <h3 class="mb-0">James Buchanan High School</h3>
-              <div class="subheading mb-3">Technology Magnet Program</div>
-              <p>GPA: 3.56</p>
+              <h3 class="mb-1">Помощник системного администратора / Системный администратор</h3>
+              <div class="mb-3 font-weight-bold">группа системного администрирования "Хьюстон"</div>
+              <p>
+                Монтаж, обслуживание и развитие ИТ инфраструктуры заказчиков (ГУК ММТ "Геликон-Опера", Институт Биологии Гена РАН, ООО «Тойсберри», 4Rooms, сети ювелирных магазинов и пр.). Составление договоров с контрагентами компаний для поставки оборудования и компонентов. Внедрение почтовых сервисов, организация intranet порталов, лицензирование имеющегося ПО, подключение единой корпоративной антивирусной системы, консультации пользователей.
+              </p>
+              <p>
+                Группа состояла из нескольких ИТ-специалистов и работала в режиме аутсорса с удаленной поддержкой и выездом к клиенту при необходимости. 
+              </p> 
+              <p>
+                Администрирование локальных сетей (Windows Server 2003, AD, DNS, DHCP, настройка групп пользователей и политик безопасности) <br>
+                Консультация и поддержка конечных пользователей (Windows 95, 98, 2000, XP, Vista) <br>
+                Установка и обновление антивирусных программ (Symantec, KAV, AVG, Avast) <br>
+              </p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">August 2002 - May 2006</span>
+              <span class="text-primary">Октябрь 2006 — Апрель 2008</span>
             </div>
           </div>
   
         </div>
-      </div>
+  
+      </section> <!-- experience -->
 
-    
+      <hr class="m-0">
+  
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+        <div class="w-100">
+          <h2 class="mb-5 lobster">Повышение квалификации, курсы</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fas fa-user-graduate text-warning"></i>
+              Information Systems Management - НОУ "Интуит" 2014</li>
+            <li>
+              <i class="fa-li fas fa-user-graduate text-warning"></i>
+              Windows Server 2012 R2 (Jump Start) - Microsoft Virtual Academy 2014</li>
+            <li>
+              <i class="fa-li fas fa-user-graduate text-warning"></i>
+              Модернизация инфраструктуры организации с помощью Windows Server 2012 R2 - Microsoft Virtual Academy 2014</li>
+            <li>
+              <i class="fa-li fas fa-user-graduate text-warning"></i>
+              1С Бухгалтерия 8.1 - НОУ "Интуит" 2014</li>
+            <li>
+              <i class="fa-li fas fa-user-graduate text-warning"></i>
+              Microsoft Windows for Users - НОУ "Интуит" 2010</li>
+            <li>
+              <i class="fa-li fas fa-user-graduate text-warning"></i>
+              Система Гарант Эксперт - НПП "Гарант-сервис" 2010</li>
+            <li>
+          </ul>
+        </div>
+      </section> <!-- awards -->
+  
+      <hr class="m-0">
+  
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+        <div class="w-100">
+          <h2 class="mb-5 lobster">Образование</h2>
+  
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div class="resume-content">
+              <h3 class="mb-0">Тульский Государственный Университет</h3>
+              <div class="mb-3">Специалист</div>
+              <div>"Электроснабжение"</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Август 2000 - Май 2005</span>
+            </div>
+          </div>
+  
+          <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+            <div class="resume-content">
+              <h3 class="mb-0">Тульский Механический Техникум им С.И.Мосина</h3>
+              <div class="mb-3">Tехник-электрик</div>
+              <div>"Электроснабжение промышленных предприятий и гражданских сооружений"</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Август 1996 - Май 2000</span>
+            </div>
+          </div>
+  
+        </div>
+      </section> <!-- education -->
 
-      
-
-
-      
-    </main> <!-- main -->
-
+      <br><br>
+  
+      <!--<hr class="m-0">
+  
+      <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+        <div class="w-100">
+          <h2 class="mb-5">Интересы</h2>
+          <p>Социальные танцы, ювелирное дело, каллиграфия</p>
+          <p class="mb-0">И прочее такое...</p>
+        </div>-
+      </section>-->
+  
+    </main> <!-- resume -->
 
     <div class="container"> <!-- footer container -->
       <footer class="navbar navbar-expand navbar-light bg-light">
