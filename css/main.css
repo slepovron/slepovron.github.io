@@ -46,14 +46,6 @@ header {
   margin-top: 1%;
 }
 
-main {
-  flex-grow: 1;
-}
-
-footer {
-  flex-shrink: 0;
-}
-
 .jumbotron {
   margin-bottom: 1%;
   padding: 2rem 2rem;

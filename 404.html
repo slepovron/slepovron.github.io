@@ -1,60 +1,84 @@
-<!doctype html>
-<html lang="en">
-<head>
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Page Not Found</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        * {
-            line-height: 1.2;
-            margin: 0;
-        }
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Welcome page</title>
+  </head>
 
-        html {
-            color: #888;
-            display: table;
-            font-family: sans-serif;
-            height: 100%;
-            text-align: center;
-            width: 100%;
-        }
+  <body class="d-flex flex-column h-100">
 
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
-        }
+    <div class="container"> <!-- navigation bar container -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light font-weight-bold">
+          <a class="logo navbar-brand" href="../index.html">
+            <img src="https://avatars2.githubusercontent.com/u/27227805?s=460&v=4" width="50" height="50" alt="logo" class="rounded-circle">
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#projects">Проекты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/resume.html">Резюме</a>
+              </li>
+              <!--<li class="nav-item">
+                  <a class="nav-link disabled" href="pages/about_me.html">About Me</a>
+              </li>-->
+              <li class="nav-item">
+                <a class="nav-link" href="pages/links.html">Ссылки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mailto:vladimir.slepovron@gmail.com">Контакты</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </div> <!-- navigation bar -->
+    
+    <main role="main" class="flex-shrink-0">
+      <div class="container">
+        <div class="card text-center bg-light">
+          <div class="card-body">
+            <h1 class="card-title lobster">Wrong! Do it again!</h1>
+            <p class="card-text">"Да ни от кого он не прячется. Просто людям очень сложно его обнаружить…"</p>
+            <a href="index.html" class="btn btn-sm btn-secondary">На главную</a>
+          </div>
+        </div>  
+      </div>
+    </main>
 
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
+    <footer class="footer mt-auto"> <!-- footer container -->
+      <div class="container">
+        <div class="navbar navbar-expand navbar-light bg-light">
+          <div class="social navbar-nav">
+            <a class="nav-item nav-link" href="https://www.linkedin.com/in/wladimir-sawicki-16761499/"><i class="fab fa-linkedin-in"></i></a>
+            <a class="nav-item nav-link" href="https://github.com/slepovron"><i class="fab fa-github"></i></a>
+            <a class="nav-item nav-link" href="https://discordapp.com/users/wladimir_korwin#0325"><i class="fab fa-discord"></i></a>
+            <a class="nav-item nav-link" href="https://t.me/wladimir_korwin"><i class="fab fa-telegram"></i></a>
+            <a class="nav-item nav-link" href="https://join.skype.com/invite/mgR1rLxv2B0L"><i class="fab fa-skype"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer> <!-- footer -->
 
-        p {
-            margin: 0 auto;
-            width: 280px;
-        }
 
-        @media only screen and (max-width: 280px) {
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-            body, p {
-                width: 95%;
-            }
+  </body>
 
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
-
-        }
-
-    </style>
-</head>
-<body>
-    <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
-</body>
 </html>
 <!-- IE needs 512+ bytes: https://blogs.msdn.microsoft.com/ieinternals/2010/08/18/friendly-http-error-pages/ -->
