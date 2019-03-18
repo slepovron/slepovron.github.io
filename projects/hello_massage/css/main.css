@@ -97,6 +97,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*==============================================
+          Yoga Website Stylesheet
+           Body Core Stylesheet
+===============================================*/
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -637,97 +642,12 @@ header .border-img {
     height: 80px
 }
 
-.circle {
-    position: relative;
-    display: block;
-    background-color: transparent;
-    color: #222;
-    text-align: center;
-    border: 1px solid #d4d4d4;
-    border-radius: 50%;
-    font-family: 'Old Standard TT', serif;
-}
-
-.about .circle .gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    background: -moz-linear-gradient(left, rgba(60, 40, 159, 0.7) 0%, rgba(11, 94, 237, 0.7) 100%);
-    background: -webkit-linear-gradient(left, rgba(60, 40, 159, 0.7) 0%, rgba(11, 94, 237, 0.7) 100%);
-    background: linear-gradient(to right, rgba(60, 40, 159, 0.7) 0%, rgba(11, 94, 237, 0.7) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b33c289f', endColorstr='#b30b5eed', GradientType=1);
-}
-
-
-.circle:after {
-    display: block;
-    padding-bottom: 100%;
-    width: 100%;
-    height: 0;
-    border-radius: 50%;
-    background-color: #ddd;
-    content: "";
-    background-image: url("../images/about-1.jpg");
-}
-
-.circle__inner {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.circle__wrapper {
-    display: table;
-    width: 100%;
-    height: 100%;
-    border: 20px solid white;
-    border-radius: 50%;
-}
-
-.circle__content {
-    display: table-cell;
-    padding: 1em;
-    border-radius: 50%;
-    color: #fff;
-    vertical-align: middle;
-}
-
-.about .circle__content h4 {
-    font-size: 34px;
-    padding-bottom: 15px;
-}
-
-.about .circle__content h4 a {
-    color: #ffffff;
-}
-
-.about .circle__content h4 span {
-    font-size: 22px;
-    font-style: italic;
-}
-
-.about .circle__content p {
-    font-size: 14px;
-    padding: 0 40px;
-    margin-bottom: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.about .circle__content p a {
-    color: #ffffff;
-}
 
 /*==================== 
-    section-4 Styles
+    section-item Styles
 ====================*/
 
-.section-4 {
+.section-item {
     width: 100%;
     height: auto;
     color: #ffffff;
@@ -735,33 +655,33 @@ header .border-img {
     font-family: 'Old Standard TT', serif;
 }
 
-.section-4 figure img {
+.section-item figure img {
     width: 100%;
-    height: auto;
+    height: 830.2px;
     object-fit: cover;
     position: relative;
 }
 
-.section-4 .right-part {
+.section-item .right-part {
     padding: 70px 0;
     padding-left: 50px;
 }
 
-.section-4 figure {
+.section-item figure {
     margin-bottom: 0;
 }
 
-.section-4 .right-part figure {
+.section-item .right-part figure {
     margin-bottom: 60px;
 }
 
-.section-4 .right-part figure img {
+.section-item .right-part figure img {
     width: 85%;
     height: 250px;
     object-fit: cover;
 }
 
-.section-4 .gradient {
+.section-item .gradient {
     position: absolute;
     top: 0;
     left: 15px;
@@ -773,24 +693,24 @@ header .border-img {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dff0000', endColorstr='#4dfff000', GradientType=1);
 }
 
-.section-4 .heading h2 {
+.section-item .heading h2 {
     font-size: 56px;
 }
 
-.section-4 .heading h3 {
+.section-item .heading h3 {
     color: #f7941d;
     font-size: 30px;
     padding-bottom: 60px;
 }
 
-.section-4 p {
+.section-item p {
     font-size: 20px;
     padding-bottom: 20px;
     padding-right: 660px;
 }
 
-.section-4 .btn-primary,
-.section-4 .btn-secondary {
+.section-item .btn-primary,
+.section-item .btn-secondary {
     border-radius: 100px;
     width: 11%;
     padding: 12px 0;
@@ -801,8 +721,8 @@ header .border-img {
     font-family: 'Montserrat', sans-serif;
 }
 
-.section-4 .btn-primary:not(:disabled):not(.disabled).active,
-.section-4 .btn-primary:not(:disabled):not(.disabled).active:focus {
+.section-item .btn-primary:not(:disabled):not(.disabled).active,
+.section-item .btn-primary:not(:disabled):not(.disabled).active:focus {
     margin-right: 15px;
     color: #ffffff;
     background-color: transparent;
@@ -810,8 +730,8 @@ header .border-img {
     box-shadow: none;
 }
 
-.section-4 .btn-secondary:not(:disabled):not(.disabled).active,
-.section-4 .btn-secondary:not(:disabled):not(.disabled).active:focus {
+.section-item .btn-secondary:not(:disabled):not(.disabled).active,
+.section-item .btn-secondary:not(:disabled):not(.disabled).active:focus {
     color: #ffff00;
     border-color: #ffff00;
     box-shadow: none;
@@ -1371,7 +1291,7 @@ header .border-img {
     display: inline-block;
 }
 
-#services .fa-om {
+#services .fa-envira {
     color: #54a50f;
     font-size: 25px;
     margin-right: 10px;
@@ -1447,7 +1367,7 @@ header .border-img {
     display: inline-block;
 }
 
-#products .fa-om {
+#products .fa-envira {
     color: #54a50f;
     font-size: 25px;
     margin-right: 10px;
@@ -1523,7 +1443,7 @@ header .border-img {
     display: inline-block;
 }
 
-#rates .fa-om {
+#rates .fa-envira {
     color: #54a50f;
     font-size: 25px;
     margin-right: 10px;
@@ -1926,26 +1846,26 @@ header .border-img {
         height: 680px;
         padding-top: 120px;
     }
-    .section-4 figure img {
+    .section-item figure img {
         height: 850px;
     }
     .services .gradient {
         width: 92%;
     }
-    .section-4 .gradient {
+    .section-item .gradient {
         width: 92%;
     }
-    .section-4 .right-part figure img {
+    .section-item .right-part figure img {
         width: 100%;
         height: 200px;
     }
-    .section-4 .btn-primary,
-    .section-4 .btn-secondary {
+    .section-item .btn-primary,
+    .section-item .btn-secondary {
         width: 16%;
         padding: 10px 0;
         font-size: 16px;
     }
-    .section-4 p {
+    .section-item p {
         padding-right: 100px;
     }
     .banner-home h1 {
@@ -2107,7 +2027,7 @@ header .border-img {
         padding-bottom: 12px;
         margin-bottom: 20px;
     }
-    .section-4 .gradient {
+    .section-item .gradient {
         width: 89%;
     }
     .services figure img {
@@ -2126,27 +2046,27 @@ header .border-img {
     .about .circle__content h4 {
         font-size: 30px;
     }
-    .section-4 .right-part {
+    .section-item .right-part {
         padding: 50px 0;
         padding-left: 30px;
     }
-    .section-4 .heading h3 {
+    .section-item .heading h3 {
         font-size: 24px;
         padding-bottom: 30px;
     }
-    .section-4 .heading h2 {
+    .section-item .heading h2 {
         font-size: 42px;
     }
-    .section-4 .right-part figure img {
+    .section-item .right-part figure img {
         height: 150px;
     }
-    .section-4 .gradient {
+    .section-item .gradient {
         height: 730px;
     }
-    .section-4 figure img {
+    .section-item figure img {
         height: 730px;
     }
-    .section-4 p {
+    .section-item p {
         font-size: 18px;
     }
     .blog .heading img {
@@ -2379,39 +2299,39 @@ header .border-img {
     .services {
         height: auto;
     }
-    .section-4 .gradient {
+    .section-item .gradient {
         width: 85.5%;
         height: 100%;
     }
-    .section-4 .heading h2 {
+    .section-item .heading h2 {
         font-size: 32px;
     }
-    .section-4 .heading h3 {
+    .section-item .heading h3 {
         font-size: 22px;
         padding-bottom: 40px;
     }
-    .section-4 p {
+    .section-item p {
         padding-right: 0;
         font-size: 16px;
         padding-bottom: 10px;
     }
-    .section-4 .btn-primary,
-    .section-4 .btn-secondary {
+    .section-item .btn-primary,
+    .section-item .btn-secondary {
         width: 25%;
         padding: 10px 0;
         font-size: 14px;
     }
-    .section-4 figure img {
+    .section-item figure img {
         height: 600px;
     }
-    .section-4 .right-part {
+    .section-item .right-part {
         padding: 40px 0;
         padding-left: 30px;
     }
-    .section-4 .right-part figure img {
+    .section-item .right-part figure img {
         height: 120px;
     }
-    .section-4 .right-part figure {
+    .section-item .right-part figure {
         margin-bottom: 30px;
     }
     .blog {
@@ -2477,7 +2397,7 @@ header .border-img {
     #services .heading h3 {
         font-size: 26px;
     }
-    #services .fa-om {
+    #services .fa-envira {
         font-size: 22px;
     }
     #products img {
@@ -2696,7 +2616,7 @@ header .border-img {
     .container-fluid {
         padding: 0 15px;
     }
-    .section-4 .right-part {
+    .section-item .right-part {
         padding: 40px 15px;
     }
     header .logo {
@@ -2714,16 +2634,16 @@ header .border-img {
     .services .contant-part-2 ul li:last-child span {
         border-bottom: none;
     }
-    .section-4 .btn-primary,
-    .section-4 .btn-secondary {
+    .section-item .btn-primary,
+    .section-item .btn-secondary {
         width: 30%;
         font-size: 12px;
     }
-    .section-4 .gradient {
+    .section-item .gradient {
         width: 93.2%;
         height: 300px;
     }
-    .section-4 figure img {
+    .section-item figure img {
         height: 300px;
     }
     .services figure img {
@@ -2796,7 +2716,7 @@ header .border-img {
     #products .heading h3 {
         font-size: 24px;
     }
-    #products .fa-om {
+    #products .fa-envira {
         font-size: 22px;
     }
     #products .part-1,
@@ -2847,7 +2767,7 @@ header .border-img {
     #rates .heading h3 {
         font-size: 24px;
     }
-    #rates .fa-om {
+    #rates .fa-envira {
         font-size: 22px;
     }
     #rates .part-1,
@@ -2910,7 +2830,7 @@ header .border-img {
     .services .gradient {
         width: 92%;
     }
-    .section-4 .btn-primary, .section-4 .btn-secondary {
+    .section-item .btn-primary, .section-item .btn-secondary {
         width: 33%;
         padding: 8px 0;
     }
@@ -2972,20 +2892,20 @@ header .border-img {
     .services h3 {
         font-size: 18px;
     }
-    .section-4 .heading h3 {
+    .section-item .heading h3 {
         font-size: 18px;
         padding-bottom: 20px;
     }
-    .section-4 p {
+    .section-item p {
         font-size: 15px;
         letter-spacing: 0.5px;
         padding-bottom: 0;
     }
-    .section-4 .gradient {
+    .section-item .gradient {
         width: 92.2%;
         height: 250px;
     }
-    .section-4 figure img {
+    .section-item figure img {
         height: 250px;
         margin-bottom: 10px;
     }
@@ -3046,7 +2966,7 @@ header .border-img {
     .services .gradient {
         width: 91%;
     }
-    .section-4 .gradient {
+    .section-item .gradient {
         width: 91.2%;
     }
     .about .circle__content h4 {
