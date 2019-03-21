@@ -133,3 +133,26 @@ header {
 .social {
   font-size: 2rem;
 }
+
+.div-color {
+  background: linear-gradient(290deg, #7f05e5, #0fc0ff, #ff3800, #ff00bf, #ffec00);
+  background-size: 1000% 1000%;
+  -webkit-animation: div_color 5s ease infinite;
+  -moz-animation: div_color 5s ease infinite;
+  animation: div_color 5s ease infinite;
+}
+@-webkit-keyframes div_color {
+    0%{background-position:0% 41%}
+    50%{background-position:100% 60%}
+    100%{background-position:0% 41%}
+}
+@-moz-keyframes div_color {
+    0%{background-position:0% 41%}
+    50%{background-position:100% 60%}
+    100%{background-position:0% 41%}
+}
+@keyframes div_color { 
+    0%{background-position:0% 41%}
+    50%{background-position:100% 60%}
+    100%{background-position:0% 41%}
+}
