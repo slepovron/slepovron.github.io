@@ -107,6 +107,12 @@ header {
   background-position: center;
 }
 
+#bulatdesign {
+  background: url(https://bulatdesign.github.io/assets/img/bg/img-bg-17.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .black {
   color: #000;
 }
