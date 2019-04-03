@@ -148,10 +148,11 @@ header {
 .div-color {
   background: linear-gradient(290deg, #7f05e5, #0fc0ff, #ff3800, #ff00bf, #ffec00);
   background-size: 1000% 1000%;
-  -webkit-animation: div_color 5s ease infinite;
-  -moz-animation: div_color 5s ease infinite;
-  animation: div_color 5s ease infinite;
+  -webkit-animation: div_color 15s ease infinite;
+  -moz-animation: div_color 15s ease infinite;
+  animation: div_color 15s ease infinite;
 }
+
 .div-filter {
   background-image: url('https://source.unsplash.com/random/?dark,water');
   background-size: cover;
