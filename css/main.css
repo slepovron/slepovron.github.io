@@ -1,3 +1,6 @@
+
+/* COMMON STYLES */
+
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
 @font-face {
@@ -38,6 +41,39 @@ body {
   background-color: #f8f9fa;
 }
 
+.lobster {
+  font-family: 'Lobster', cursive;
+}
+
+.black {
+  color: #000;
+}
+
+.social {
+  font-size: 2rem;
+}
+
+.quote1 {
+  background: url(../img/keyboard-small.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.quote2 {
+  background: url(../img/man-small.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.quote3 {
+  background: url(../img/station-small.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* HOME PAGE */
+
 header {
   background: url(../img/city-large.jpg);
   background-size: cover;
@@ -58,28 +94,6 @@ header {
 
 #navtop {
   margin-bottom: 1%;
-}
-
-.lobster {
-  font-family: 'Lobster', cursive;
-}
-
-.quote1 {
-  background: url(../img/keyboard-small.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.quote2 {
-  background: url(../img/man-small.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.quote3 {
-  background: url(../img/station-small.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 #tulacafe {
@@ -112,9 +126,7 @@ header {
   background-position: center;
 }
 
-.black {
-  color: #000;
-}
+/* RESUME */
 
 .resume-section {
   padding-top: 3rem;
@@ -141,9 +153,7 @@ header {
   }
 }
 
-.social {
-  font-size: 2rem;
-}
+/* LINKS */
 
 .div-color {
   background: linear-gradient(290deg, #7f05e5, #0fc0ff, #ff3800, #ff00bf, #ffec00);
