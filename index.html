@@ -47,7 +47,7 @@
                   <a class="nav-link" href="pages/links.html">Ссылки</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="mailto:vladimir.slepovron@gmail.com">Написать</a>
+                  <a class="nav-link" href="pages/contact.html">Написать</a>
                 </li>
               </ul>
             </div>
@@ -70,16 +70,12 @@
           </div> <!-- qoute card -->
 
           <div id="bulatdesign" class="card black bg-dark text-light p-3"> <!-- bulatdesign project -->
-            <div class="card-body">
               <h4 class="card-title lobster">Студия дизайна "Булат"</h4>
               <p class="card-text">Внесение правок по списку заказчика.<br>
               Масштабирование элементов, адаптивная стилизация видео блоков, выравнивание сетки, подключение иконок сайта, работа со шрифтом, активные ссылки.<br>
               Даны рекомендации по обновлению сайта и ускорению загрузки.</p>
-            </div>
-            <div class="card-footer">
               <button href="#" class="btn btn-outline-light mt-1" data-toggle="modal" data-target="#bulatdesignModal">Подробнее</button>
               <button href="http://bulatdesign.ru" class="btn btn-outline-light mt-1">Перейти на сайт</button>
-            </div>
           </div> <!-- bulatdesign -->
 
           <!-- bulatdesignModal -->
@@ -121,7 +117,7 @@
                     </p>
                   </div>
                   <div class="modal-footer">
-                    <button class="btn btn-outline-primary text-primary" data-dismiss="modal">Закрыть</button>
+                    <button class="btn btn-outline-primary" data-dismiss="modal">Закрыть</button>
                     <button href="http://bulatdesign.ru" class="btn btn-outline-dark">Перейти на сайт</button>
                   </div>
                 </div>
@@ -160,10 +156,45 @@
 
           <div id="tulacafe" class="black card bg-secondary p-3"> <!-- tulacafe project -->
             <h4 class="card-title lobster">Кондитерская Корица</h4>
-            <p class="card-text">Перенос имевшейся статической страницы кафе на систему WordPress для возможности управления содержимым сайта без обращения к разработчикам. В дальнейшем возможно добавление функционала на сайт по желанию заказчика<br>
-            На данный момент готовая к подключению тема находится у заказчика.</p>
-            <a role="button" href="https://tulacafe.ru" class="btn btn-outline-dark mt-1">Перейти на сайт</a>
+            <p class="card-text">Перенос имевшейся статической страницы кафе на систему WordPress для возможности управления содержимым сайта без обращения к разработчикам.<br>
+            В дальнейшем возможно добавление функционала на сайт по желанию заказчика.</p>
+            <button href="#" class="btn btn-outline-dark mt-1" data-toggle="modal" data-target="#tulacafeModal">Подробнее</button>
+            <button href="https://tulacafe.ru" class="btn btn-outline-dark mt-1">Перейти на сайт</button>
           </div> <!-- tulacafe -->
+
+          <!-- tulacafeModal -->
+          <div class="modal fade" id="tulacafeModal" tabindex="-1" role="dialog" aria-labelledby="bulatdesignModalTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content bg-light">
+                  <div class="modal-header">
+                    <h5 class="lobster modal-title" id="tulacafeModalTitle">Описание работы</h5>
+                    <a class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </a>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Задача:<br>
+                      - перенести страницу кафе на WordPress,<br>
+                      - сделать изменяемые поля для цен и описания.<br>
+                      <br>
+                      Сделано:<br>
+                      - создана тема WP для кафе,<br>
+                      - созданы поля для изменения контента пользователем,<br>
+                      - тема проверена на локальном веб-сервере и передана заказчику для размещения на хостинге.<br>
+                      <br>
+                      Не исправлено:<br>
+                      - на данный момент тема все еще не размещена на хостинге.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-outline-primary" data-dismiss="modal">Закрыть</button>
+                    <button href="https://tulacafe.ru" class="btn btn-outline-dark">Перейти на сайт</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- tulacafeModal -->
 
       </div> <!-- wrapper for cards -->
     </main> <!-- projects card container -->
