@@ -3,9 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
-@font-face {
-  font-family: 'Lobster', cursive;
-}
 
 @media (min-width: 576px) {
   .card-columns {
