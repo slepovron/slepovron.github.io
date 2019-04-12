@@ -123,6 +123,12 @@ header {
   background-position: center;
 }
 
+#vingil {
+  background: url(../img/vingil1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 /* RESUME */
 
 .resume-section {
