@@ -133,24 +133,54 @@
         </div> <!-- qoute card -->
 
         <div id="elenapro" class="card black bg-dark text-light p-3"> <!-- elena-pro project -->
-          <h4 class="card-title lobster">Make Up мастер</h4>
-          <p class="card-text">Портфолио для мастера макияжа, татуажа, укладки, стрижки, грима и глобального создания красоты.<br>
+          <h4 class="card-title lobster">Elena Pro</h4>
+          <p class="card-text">Сайт-портфолио для мастера макияжа, татуажа, укладки, стрижки, грима и глобального создания красоты.<br>
           Создан на основе шаблона с применением популярных элементов анимации, открытых библиотек шрифтов Ionic и FontAwesome и колоночной разбивки Masonry.</p>
+          <button href="#" class="btn btn-outline-light mt-1" data-toggle="modal" data-target="#elenaproModal">Подробнее</button>
           <a role="button" href="https://elena-pro.github.io/" class="btn btn-outline-light mt-1">Перейти на сайт</a>
         </div> <!-- elena-pro -->
+
+        <!-- elenaproModal -->
+        <div class="modal fade" id="elenaproModal" tabindex="-1" role="dialog" aria-labelledby="elenaproModalTitle" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content bg-light">
+              <div class="modal-header">
+                <h5 class="lobster modal-title" id="elenaprolTitle">Описание работы</h5>
+                <a class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </a>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Задача:<br>
+                  - создать статический сайт для мастера макияжа,<br>
+                  - настроить мобильную версию,<br>
+                  - разместить страницу на недорогом хостинге,<br>
+                  <br>
+                  Сделано:<br>
+                  - сайт собран на основе бесплатного шаблона,<br>
+                  - для обратной связи используется сервис usebasin,<br>
+                  - заказчик предложил поддерживать и обновлять сайт.<br>
+                  <br>
+                  Обновление:<br>
+                  - Идет замена страницы обратной связи на форму во всплывающем окне.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-outline-primary" data-dismiss="modal">Закрыть</button>
+                <button href="https://elena-pro.github.io/" class="btn btn-outline-dark">Перейти на сайт</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- elenaproModal -->
 
         <div id="massage" class="card black bg-dark text-light p-3"> <!-- yoga massage project -->
           <h4 class="card-title lobster">Тибетский массаж</h4>
           <p class="card-text">Сайт-визитка для специалиста тибетского массажа и йога-терапии на основе Boilerplate и Bootstrap4 с использованием библиотеки CSS Animate.<br>
-          За основу взят шаблон от заказчика, требующий глобальной доработки включая возможность развития в многостраничный сайт с переключением языком и возможностью отправки обратной связи.</p>
+          За основу взят шаблон предоставленный заказчиком требующий глобальной доработки. В дальнейшем предполагается возможность развития в многостраничный сайт с переключением языков и отправкой обратной связи.</p>
           <a role="button"  href="https://caring-hands.github.io/" class="btn btn-outline-light mt-1">Перейти на сайт</a>
         </div> <!-- yoga massage -->
-
-        <div id="mylinks" class="card bg-dark text-light p-3"> <!-- links page -->
-          <h4 class="card-title lobster">Полезные ссылки</h4>
-          <p class="card-text">Страница с инструментами которые я использую в работе. В основном это открытые проекты либо проекты с возможностью ознакомительного периода использования, а так-же различные шпаргалки и библиотеки. Список постоянно пополняется и, надеюсь, будет полезным не только мне.</p>
-          <a role="button" href="pages/links.html" class="btn btn-outline-light mt-1">Перейти на страницу</a>
-        </div> <!-- links -->
 
         <div id="tulacafe" class="black card bg-secondary p-3"> <!-- tulacafe project -->
           <h4 class="card-title lobster">Кондитерская Корица</h4>
@@ -161,7 +191,7 @@
         </div> <!-- tulacafe -->
 
         <!-- tulacafeModal -->
-        <div class="modal fade" id="tulacafeModal" tabindex="-1" role="dialog" aria-labelledby="bulatdesignModalTitle" aria-hidden="true">
+        <div class="modal fade" id="tulacafeModal" tabindex="-1" role="dialog" aria-labelledby="tulacafeModalTitle" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content bg-light">
                 <div class="modal-header">
@@ -181,7 +211,7 @@
                     - созданы поля для изменения контента пользователем,<br>
                     - тема проверена на локальном веб-сервере и передана заказчику для размещения на хостинге.<br>
                     <br>
-                    Не исправлено:<br>
+                    Не сделано:<br>
                     - на данный момент тема все еще не размещена на хостинге.
                   </p>
                 </div>
@@ -193,6 +223,12 @@
             </div>
           </div>
         <!-- tulacafeModal -->
+
+        <div id="mylinks" class="card bg-dark text-light p-3"> <!-- links page -->
+          <h4 class="card-title lobster">Полезные ссылки</h4>
+          <p class="card-text">Страница с инструментами которые я использую в работе. В основном это открытые проекты либо проекты с возможностью ознакомительного периода использования, а так-же различные шпаргалки и библиотеки. Список постоянно пополняется и, надеюсь, будет полезным не только мне.</p>
+          <a role="button" href="pages/links.html" class="btn btn-outline-light mt-1">Перейти на страницу</a>
+        </div> <!-- links -->
 
       </div> <!-- wrapper for cards -->
     </main> <!-- projects card container -->
