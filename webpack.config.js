@@ -7,6 +7,7 @@ let conf = {
     path: path.resolve(__dirname, '.dist'),
     filename: 'main.js',
     // publickPath: 'dist/'
-  }
+  },
+ 
 }
 module.exports = conf; // можно записать вместо "let conf" >> "module.exports" сразу
