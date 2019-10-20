@@ -19,3 +19,12 @@ var arr = [
 ];
 var rand = Math.floor(Math.random() * arr.length);
 quoteText.innerText = (arr[rand]);
+
+// английский текст в блоках
+var changeableText = document.querySelectorAll('.changeableText');
+var langButton = document.querySelector('.langButton');
+var langEn = document.querySelector('#langEn');
+var langRu = document.querySelector('#langRu');
+var langPl = document.querySelector('#langPl');
+
+console.log(changeableText);
