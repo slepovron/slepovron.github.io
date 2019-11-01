@@ -166,16 +166,6 @@ header {
   animation: div_color 15s ease infinite;
 }
 
-/* .div-filter {
-  background-image: url('https://source.unsplash.com/random/?dark,water');
-  background-size: cover;
-  background-position: center;
-}
-
-.div-filter:hover {
-  filter: invert(.9);
-} */
-
 @-webkit-keyframes div_color {
     0%{background-position:0% 41%}
     50%{background-position:100% 60%}
