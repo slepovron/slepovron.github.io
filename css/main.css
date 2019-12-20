@@ -129,6 +129,18 @@ header {
   background-position: center;
 }
 
+#y-math {
+
+}
+
+#ad-economics {
+
+}
+
+.frozed {
+  filter: blur(2px);
+}
+
 /* RESUME */
 
 .resume-section {

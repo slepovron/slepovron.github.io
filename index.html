@@ -22,7 +22,7 @@
   
     <div class="container"> <!-- jumbotron container -->
       <header class="jumbotron">
-        <div class="col-12">
+        <!-- <div class="col-12">
           <div class="row  justify-content-end">
             <div class="btn-group btn-group-sm langButton" role="group" aria-label="button">
               <button type="button" class="btn btn-outline-light mt-1" id="langEn">en</button>
@@ -30,7 +30,7 @@
               <button type="button" class="btn btn-outline-light mt-1" id="langPl">pl</button>
             </div>
           </div>
-        </div>
+        </div> -->
         <a class="logo jumbotron-logo" href="index.html">
           <img src="https://avatars2.githubusercontent.com/u/27227805?s=460&v=4" width="170" height="170" alt="logo" class="rounded-circle img-thumbnail">
         </a>
@@ -69,22 +69,31 @@
       <a name="projects"></a>
       <div class="card-columns"> <!-- wrapper for cards -->
 
+        <div id="ad-economics" class="card bg-dark text-light"> <!-- ad-economics project -->
+          <img src="img/economics.jpg" class="card-img-top" alt="ad-economics">
+          <div class="card-body">
+            <h5 class="card-title lobster">Дмитрий Акимов</h5>
+            <p class="card-text">Сайт в виде Single Page Application для преподавателя экономики.</p>
+            <a role="button" href="#" class="btn btn-outline-light mt-1" target="_blank">В работе</a>
+          </div>
+        </div> <!-- ad-economics projec -->
+
+        <div id="vingil" class="card black bg-dark text-light p-3 frozed"> <!-- vingil project -->
+          <h4 class="card-title lobster">Vingil</h4>
+          <p class="card-text">Создание сайта-магазина на WordPress на основе выбранной заказчиком темы.<br>
+          Полный цикл работ, от выбора хостинга до помощи клиенту в администрировании полученного магазина.</p>
+          <a role="button" href="#" class="btn btn-outline-light mt-1">Проект заморожен</a>
+        </div> <!-- vingil -->
+
         <div id="y-math" class="card bg-dark text-light"> <!-- y-math project -->
           <img src="img/y-math.jpg" class="card-img-top" alt="y-math">
           <div class="card-body">
             <h5 class="card-title lobster">Online Math Tutor</h5>
-            <p class="card-text">Одностраничный сайт с навигацией для репетитора по математике. При создании куплено доменное имя  и настроен хостинг. Сайт собран на основе компонентов библиотеки Bootstrap4.<br>
-              Клиент предполагает развитие страницы для продвижения резюме, возможно добавление отзывов от учеников и ссылок на различные ресурсы и материалы используемые в работе репетитора.</p>
+            <p class="card-text">Landing page для репетитора по математике. Помощь в выборе и настройке хостинга и доменного имени. Сайт собран на основе компонентов библиотеки Bootstrap4.<br>
+            Клиент предполагает развитие страницы для продвижения резюме, возможно добавление отзывов от учеников и ссылок на различные ресурсы и материалы используемые в работе репетитора.</p>
             <a role="button" href="http://y-math.xyz" class="btn btn-outline-light mt-1" target="_blank">Перейти на сайт</a>
           </div>
-        </div> <!-- y-math -->
-
-        <div id="vingil" class="card black bg-dark text-light p-3"> <!-- vingil project -->
-          <h4 class="card-title lobster">Vingil</h4>
-          <p class="card-text">Создание сайта-магазина на WordPress на основе выбранной заказчиком темы.<br>
-          Полный цикл работ, от выбора хостинга до помощи клиенту в администрировании полученного магазина.</p>
-          <a role="button" href="#" class="btn btn-outline-light mt-1">В работе</a>
-        </div> <!-- vingil -->
+        </div> <!-- y-math project -->
 
         <div id="bulatdesign" class="card black bg-dark text-light p-3"> <!-- bulatdesign project -->
             <h4 class="card-title lobster">Студия дизайна "Булат"</h4>
@@ -274,6 +283,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <!-- nethealth project link -->
     <script src="https://cdn.nethealth.pw/ping.js" async defer></script>
   </body>
 </html>
