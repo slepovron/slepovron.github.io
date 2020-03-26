@@ -1,5 +1,4 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+# The humans & technology
 
 # TEAM
 
@@ -9,7 +8,6 @@
 
     <name>
 
-# TECHNOLOGY COLOPHON
+# TECHNOLOGY
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3, HTML5, JavaScript
