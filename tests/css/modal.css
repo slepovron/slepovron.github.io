@@ -1,0 +1,84 @@
+.mymodal {}
+
+
+.mymodal.open .modal-window {
+  opacity: 1;
+  z-index: 10;
+  transform: translateY(100px);
+}
+
+.mymodal.open .modal-overlay {
+  opacity: 1;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.mymodal.hide .modal-overlay {
+  opacity: 1;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.mymodal.hide .modal-window {
+  opacity: 1;
+  z-index: 10;
+  transform: translateY(-300px);
+}
+
+.modal-overlay {
+  opacity: 0;
+  z-index: -10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color ease-in .5s;
+}
+
+.modal-window {
+  opacity: 0;
+  z-index: -10;
+  width: 600px;
+  border-radius: 6px;
+  background-color: #fff;
+  margin: 0 auto; /* надо поменять на 0 авто */
+  transform: translateY(-300px); 
+  transition: transform ease-in .5s;
+}
+
+.modal-header {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.modal-title {
+  font-size: 1.5rem;  
+}
+
+.modal-close {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 10px;
+}
+ 
+.mdal-body p {
+  margin: 0 0 5px;
+}
+
+.modal-footer {
+  display: flex;
+  padding: 5px 10px;
+  border-top: 1px solid black;
+  justify-content: flex-end;
+}
+
+.modal-button {
+  margin: 5px 3px;
+}
