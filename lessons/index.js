@@ -1,4 +1,4 @@
-const shapes = [ // данные в виде массива для каждого элемента
+let shapes = [ // данные в виде массива для каждого элемента (let необходимо для возможности удаления элемента)
   {
     id: 1,
     title: 'circle',
@@ -128,6 +128,8 @@ document.addEventListener('click', event => {
       content: `<p>Вы удаляете <strong>${shape.title}</strong></p>`
     }).then(() => {
       console.log('Remove');
+      shapes = shapes.filter(sh => sh.id !== id);
+      render();
     }).catch(() => {
       console.log('Cancel');
     });
