@@ -1,5 +1,5 @@
 {
-  "name": "1webpack",
+  "name": "webpack-app",
   "version": "1.0.0",
   "description": "webpack app",
   "main": "app.js",
@@ -14,6 +14,7 @@
   "author": "Slepovron",
   "license": "ISC",
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^4.0.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",

@@ -1,4 +1,6 @@
 const path = require("path"); // добавляем стандартную функцию вебпака превращающую локальные пути до файлов в полные
+const HTMLPlugin = require("html-webpack-plugin"); // подключаем html-webpack-plugin который нужен для сборки из js в html
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: "./src/app.js",
@@ -9,5 +11,11 @@ module.exports = {
   },
   devServer: {
     port: 3000 // назначаем порт для сервера на котором будет запускаться приложение
-  }
+  },
+  plugins: [
+    new HTMLPlugin({
+      template: './src/index.html'
+    }),
+    new CleanWebpackPlugin()
+  ]
 };
