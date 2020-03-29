@@ -1,0 +1,22 @@
+{
+  "name": "1webpack",
+  "version": "1.0.0",
+  "description": "webpack app",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "js",
+    "javascript"
+  ],
+  "author": "Slepovron",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.0.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
