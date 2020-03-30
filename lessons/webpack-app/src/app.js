@@ -1,1 +1,3 @@
-console.log('App in progress...');
+import "./styles.css";
+
+console.log("App in progress...");
