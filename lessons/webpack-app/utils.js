@@ -1,3 +1,3 @@
 export function isValid(value) {
-  return value.lenght >= 10;
+  return value.length >= 10;
 }
