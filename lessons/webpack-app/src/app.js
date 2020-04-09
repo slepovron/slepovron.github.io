@@ -1,4 +1,7 @@
 import {
+  Queston
+} from './question.js';
+import {
   isValid
 } from "../utils";
 import "./styles.css";
@@ -9,7 +12,11 @@ const form = document.querySelector("#form");
 const input = form.querySelector("#form-input");
 const submitBtn = form.querySelector("#form-submit");
 
-form.addEventListener('submit', submitFormHandler); // submit это нативное событие подтверждения
+form.addEventListener('submit', submitFormHandler); // submit это нативное событие подтверждения формы
+input.addEventListener('input', () => {
+  submitBtn.disabled = !isValid(input.value);
+}); // т.е. только пока isValid не возвращает true кнопка продолжает оставаться отключенной (иначе требуется изменить атрибут в html)
+
 
 function submitFormHandler(event) {
   event.preventDefault();
@@ -25,9 +32,12 @@ function submitFormHandler(event) {
     submitBtn.disabled = true;
     console.log("Your questions", question);
     // async request to server for save question
+    Queston.create(question).then(() => {
+      input.value = '';
+      input.className = 'form-control';
+      submitBtn.disabled = false;
+    });
 
-    input.value = '';
-    input.className = 'form-control';
-    submitBtn.disabled = false;
+
   }
 }
