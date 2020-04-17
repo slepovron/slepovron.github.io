@@ -1,5 +1,5 @@
 import {
-  Queston
+  Question
 } from './question.js';
 import {
   isValid
@@ -32,7 +32,7 @@ function submitFormHandler(event) {
     submitBtn.disabled = true;
     console.log("Your questions", question);
     // async request to server for save question
-    Queston.create(question).then(() => {
+    Question.create(question).then(() => {
       input.value = '';
       input.className = 'form-control';
       submitBtn.disabled = false;
