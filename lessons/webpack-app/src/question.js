@@ -18,8 +18,7 @@ export class Question {
   }
 
   static renderList() {
-    const question = getQuestionsFromLocalStorage();
-
+    const questions = getQuestionsFromLocalStorage();
     const html = questions.length ?
       questions.map(toCard).join('') // то есть мы забираем каждый вопрос в виде строки и собираем через map в массив разделяя пробелом (если нам возвращается true)
       :
@@ -28,10 +27,9 @@ export class Question {
       </p>
       `; // если вопросов еще не было отдаем в блок наших вопросов эту запись.
 
-    const myquestions = document.getElementById('myquestions'); // забираем элемент по ид
+    const myquestions = document.getElementById('my-questions'); // забираем элемент по ид
     myquestions.innerHTML = html; // вставляем туда нашу фразу
   }
-
 }
 
 function addToLocalStorage(question) {
@@ -45,5 +43,13 @@ function getQuestionsFromLocalStorage() {
 }
 
 function toCard(question) {
-  return 'testtesttest'; // для начала вернем заглушку
+  return `
+    <p>
+    ${new Date(question.date).toLocaleDateString()}
+    ${new Date(question.date).toLocaleTimeString()}
+    <p>
+    ${question.text}
+    </p>
+    <br/>
+  `;
 }

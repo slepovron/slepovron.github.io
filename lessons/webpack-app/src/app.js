@@ -6,7 +6,6 @@ import {
 } from "../utils"; // импорт проверки на количество занков в вопросе
 import "./styles.css"; // подключение своих стилей в итоговый бандл (требует установки css-loader)
 
-// console.log("App in progress..."); // сообщение-затычка
 
 const form = document.querySelector("#form"); // запрос на получение формы с нуждным ID
 const input = form.querySelector("#form-input"); // получение инпута в этой форме
@@ -14,6 +13,7 @@ const submitBtn = form.querySelector("#form-submit"); // получение кн
 
 // на данном этапе мы получили нужные нам переменные const соотносящиеся с нодами в html
 
+window.addEventListener('load', Question.renderList); // при загрузки окна будут подгружаться все имеющиеся в локал записи вопросов
 form.addEventListener("submit", submitFormHandler); // submit это нативное событие подтверждения формы полученной нами по ИД
 input.addEventListener("input", () => {
   submitBtn.disabled = !isValid(input.value);
