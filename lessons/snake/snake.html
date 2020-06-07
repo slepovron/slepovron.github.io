@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/snake.css" />
-    <title>Snake game</title>
-  </head>
 
-  <body>
-    <main class="container">
-      <div class="card snake-game-img">
-        <canvas id="snake-game" width="640" height="640"></canvas>
-        <div class="card-body">
-          <p class="card-text">
-            Some game for dummers =-)
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/snake.css" />
+  <title>Snake game</title>
+</head>
+
+<body>
+
+  <main class="container-fluid bg-secondary">
+    <div class="card" style="width: 640px">
+      <canvas id="snake-game" width="640" height="640"></canvas>
+      <div class="card-body">
+        
+        <p class="card-text">
+          Your score: <b id="score"></b>
+        </p>
+        <p class="font-italic font-weight-lighter">
+          Just push UP/DOWN/RIGHT/LEFT and have fun!
+        </p>
       </div>
-    </main>
-    <script src="js/snake.js"></script>
-  </body>
+    </div>
+  </main>
+  <script src="js/snake.js"></script>
+</body>
+
 </html>

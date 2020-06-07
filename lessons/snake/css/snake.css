@@ -1,0 +1,14 @@
+.container-fluid {
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  display: block;
+  width: 640px;
+  height: 640px;
+}
+
+.card-body {
+  min-width: 640px !important;
+}
