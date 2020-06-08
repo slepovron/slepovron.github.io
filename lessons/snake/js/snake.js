@@ -21,6 +21,9 @@ bodyImg.src = "img/body.png"; // значок хвоста змейки
 let score = 0;
 scoreText.innerText = "0";
 
+// скорость
+let speed = 300;
+
 // сама змейка это массив из объектов
 let snake = [];
 // создадим нулевой объект массива - т.е. голову, в некоем местe на игровом поле
@@ -60,7 +63,6 @@ function eatBody(head, arr) {
   }
 }
 
-
 // функция отрисовки созданных элементов на канвасе
 function draw() {
   ctx.drawImage(groundImg, 0, 0); // нарисовали игровое поле
@@ -97,6 +99,8 @@ function draw() {
     };
     score++;
     scoreText.innerText = `${score}`;
+    speed = speed - 5;
+    console.log(speed);
     // и не удаляем значок хвоста при перемещении
   } else {
     // удаляем последний элемент в массиве змейки - передвигая ее таким образом на новые координаты
@@ -116,4 +120,5 @@ function draw() {
   snake.unshift(newHead);
 }
 
-let game = setInterval(draw, 150); // вызвали функцию отрисовки с частотой 100мс
+let game = setInterval(draw, speed); // вызвали функцию отрисовки с частотой 100мс
+console.log(game);
