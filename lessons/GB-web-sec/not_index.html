@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+
+    img {
+      height: 200px;
+      width: auto;
+      margin-left: 300px;
+      opacity: .5;
+    }
+
+    a {
+      color: green;
+      margin-left: 200px;
+      font-size: large;
+    }
+
+    p {
+      color: red;
+      font-weight: 600;
+      opacity: .3;
+    }
+
+    #num1 {
+      position: absolute;
+      z-index: -9999;
+    }
+
+    #num2,
+    iframe {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      opacity: .7;
+      z-index: 9999;
+    }
+  </style>
+
+</head>
+<div id="num1">
+  <img src="https://fakeimg.pl/440x230/282828/eae0d0/?retina=1&text=Problem?">
+  <br>
+  <a href="https://fakeimg.pl">ссылка</a>
+  <br>
+  <h1>All this text in </ /h1> tag! Amazing!</h1>
+  <br>
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam pariatur repellat sed corrupti necessitatibus
+    natus
+    ducimus, itaque laboriosam dolore labore officiis a doloremque incidunt consequatur eius quaerat laborum architecto
+    asperiores.
+  </p>
+</div>
+<div id="num2">
+  <iframe src="https://geekbrains.ru" frameborder="0" scrolling="no"></iframe>
+</div>
