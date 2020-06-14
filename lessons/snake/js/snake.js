@@ -100,7 +100,6 @@ function draw() {
     score++;
     scoreText.innerText = `${score}`;
     speed = speed - 5;
-    console.log(speed);
     // и не удаляем значок хвоста при перемещении
   } else {
     // удаляем последний элемент в массиве змейки - передвигая ее таким образом на новые координаты
@@ -121,4 +120,3 @@ function draw() {
 }
 
 let game = setInterval(draw, speed); // вызвали функцию отрисовки с частотой 100мс
-console.log(game);

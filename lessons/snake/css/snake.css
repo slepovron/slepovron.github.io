@@ -1,16 +1,17 @@
-.container-fluid {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center
+body {
+  background-color: grey;
 }
 
-canvas {
-  display: block;
-  width: 640px;
-  height: 640px;
+#snake-game {
+  border: 2px solid #FFF;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
-.card-body {
-  min-width: 640px !important;
+#score-text {
+  text-align: center;
 }
