@@ -2,7 +2,7 @@ export {
   ruNavText
 };
 
-const ruNavText = {
+var ruNavText = {
   first: 'Первый',
   second: 'Второй',
   third: 'Третий'

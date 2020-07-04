@@ -2,7 +2,7 @@ export {
   enNavText
 };
 
-const enNavText = {
+var enNavText = {
   first: 'First',
   second: 'Second',
   third: 'Third'
