@@ -1,5 +1,5 @@
 # dependencies
-/lessons/webpack-app/node_modules
+
 
 # testing
 
@@ -8,4 +8,3 @@
 
 
 # misc
-/oldpage
