@@ -19,7 +19,7 @@
             <br />Sawicki
           </h1>
           <h4 class="lobster changeableText">Фронтенд разработчик, ИТ - специалист</h4>
-          <p>Основная страница находится на GITLAB, здесь только тестовая админка и часть репозиториев.</p>
+          <p>основной сайт перенесен на gitlab, тут будет тестовая админка.</p>
           <a class="btn btn-secondary btn-lg" href="https://slepovron.gitlab.io" role="button">
             Перейти на сайт
           </a>
