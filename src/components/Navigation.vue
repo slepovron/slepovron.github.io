@@ -34,15 +34,6 @@
             <li class="nav-item">
               <router-link class="nav-link" to="/">Проекты</router-link>
             </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/About">Обо мне</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/Links">Ссылки</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/Contacts">Написать</router-link>
-            </li>
           </ul>
         </div>
       </nav>
